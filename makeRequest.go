@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+// DEPRECATED SINCE v0.0.0(yes, early deprecation)
 func (c *Client) MakeRequest(ctx context.Context, method, path string, auth map[string]string) (*Response, error) {
 	req, _ := http.NewRequestWithContext(ctx, method, path, nil)
 
